@@ -1,0 +1,1 @@
+# hoestoppgave-haugesund-c
