@@ -1,26 +1,32 @@
 * {
-  font-family: "Orbitron", sans-serif;
-  margin: 0;
-  color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    color: #fff
+}
+
+/* Navbar anchors, containers and button */
+
+.planets-nav a, .home-wrapper a {
+    text-decoration: none;
+    padding-right: 2rem;
 }
 
 body {
   line-height: 1.6;
 }
-
-a {
-  text-decoration: none;
-  padding-right: 2rem;
 }
-
+.home-wrapper a:hover, .planets-nav a:hover {
+    text-shadow: 3px 3px 4px #FCA311;
+}
 .navContainer {
-  display: flex;
-  justify-content: center;
-  background-color: #0b090a;
-  align-items: center;
-  height: 5rem;
-  width: 100vw;
-  min-width: 1200px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background-color: #0b090a;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+    min-width: 1200px;
 }
 
 .home-wrapper {
@@ -32,7 +38,66 @@ a {
 }
 
 #contact-us {
-  margin-left: 5rem;
+    padding: 10px 20px;
+    margin-left: 5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    font-weight: 500;
+    color: #0b090a;
+    transition: 0.2s all;
+}
+
+#contact-us:active, #closeBtn {
+    transform: scale(0.95);
+}
+
+#contact-us:hover, #closeBtn:hover {
+    box-shadow: 0 0 12px 8px #FCA311;
+    background-color: #E5E5E5;
+    cursor: pointer;
+}
+/* End of navbar/navbar elements styling */
+
+/*Contact form modal */
+
+.contact-modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 22rem;
+    width: 25rem;
+    border-radius: 5px;
+    background-color: #0b090a;
+    box-shadow: 0 0 5px #FCA311;
+}
+
+.modal-content {
+ text-align: center;
+ padding-top: 2rem;
+ line-height: 2rem;
+}
+
+hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 2px 2px 5px #FCA311;
+}
+
+#closeBtn {
+    margin-top: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    font-weight: 500;
+    color: #0b090a;
+    transition: 0.2s all;
 }
 
 /* MAIN */
