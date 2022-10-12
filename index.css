@@ -1,33 +1,92 @@
 * {
-    font-family: 'Orbitron', sans-serif;
-    margin: 0;
+  font-family: "Orbitron", sans-serif;
+  margin: 0;
+  color: #ffffff;
+}
+
+body {
+  line-height: 1.6;
 }
 
 a {
-    text-decoration: none;
-    color: #ffffff;
-    padding-right: 2rem;
-
+  text-decoration: none;
+  padding-right: 2rem;
 }
 
 .navContainer {
-    display: flex;
-    justify-content: center;
-    background-color: #0b090a;
-    align-items: center;
-    height: 5rem;
-    width: 100vw;
-    min-width: 1200px;
+  display: flex;
+  justify-content: center;
+  background-color: #0b090a;
+  align-items: center;
+  height: 5rem;
+  width: 100vw;
+  min-width: 1200px;
 }
 
 .home-wrapper {
-    margin-right: 6rem;
+  margin-right: 6rem;
 }
 
 .planets-nav {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 #contact-us {
-    margin-left: 5rem;
+  margin-left: 5rem;
 }
+
+/* MAIN */
+main {
+  display: flex;
+  justify-content: center;
+}
+.main-wrapper {
+  background-color: #14213d;
+  margin: 3.75rem 0 0 0;
+  padding: 3.125rem 4.6875rem;
+  box-sizing: border-box;
+  /* min-width: 1000px; */
+  width: 70rem; /* 1120px */
+  height: 100rem;
+}
+.main-wrapper h2 {
+  margin: 0 0 1rem 0;
+}
+.planet-info {
+  display: flex;
+}
+.planet-img-wrapper,
+.planet-img-wrapper img {
+  height: 22.5rem;
+}
+.planet-img-wrapper {
+  width: 45%;
+  /* width: 40%; */
+}
+.planet-img-wrapper img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.planet-api-content {
+  width: 55%;
+  /* width: 60%; */
+  padding: 0 0 0 1rem;
+}
+.planet-api-content p,
+.planet-text p {
+  /* letter-spacing: 0.12rem; */
+  /* letter-spacing: 1px; */
+  letter-spacing: 1.5px;
+}
+.planet-text {
+  padding: 0 0 3.4375rem 0;
+}
+.planet-text p:first-of-type {
+  padding: 2rem 0 0 0;
+}
+.planet-text p {
+  padding: 1rem 0 0 0;
+}
+
+/* Color palette: https://coolors.co/palette/000000-14213d-fca311-e5e5e5-ffffff */
