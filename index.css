@@ -20,6 +20,7 @@ body {
 .planets-nav a:hover {
   text-shadow: 3px 3px 4px #fca311;
 }
+
 .navContainer {
   display: flex;
   justify-content: center;
@@ -157,6 +158,10 @@ main {
 }
 .planet-text p {
   padding: 1rem 0 0 0;
+}
+
+.planet-name{
+  display: inline;
 }
 
 /* Color palette: https://coolors.co/palette/000000-14213d-fca311-e5e5e5-ffffff */
