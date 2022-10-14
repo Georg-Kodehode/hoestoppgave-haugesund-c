@@ -7,6 +7,8 @@ const gravity = document.getElementById("gravity");
 const radius = document.getElementById("radius");
 const escapeSpeed = document.getElementById("escape-speed");
 const headerApiBloc = document.getElementById("header-api-block");
+const aphelion = document.getElementById('aphelion')
+const siderealRotationPeriod= document.getElementById('sidereal_rotation_period')
 
 //text block
 const planetText = document.getElementById("planet-text");
@@ -41,13 +43,16 @@ async function getPlanetInfo(planet, isPlanet) {
 
       // block info
       if (isPlanet) {
-        volume.textContent = `Volume: ${data.vol.volValue}E${data.vol.volExponent}`;
-        mass.textContent = `Mass: ${data.mass.massValue}E${data.mass.massExponent}kg`;
-        gravity.innerHTML = `Gravity: ${data.gravity}m/s&sup2;`;
-        radius.textContent = `Radius: ${data.meanRadius}`;
-        escapeSpeed.textContent = `Escape speed: ${data.escape}`;
-        // getMoons(planet, moons.textContent);
+        volume.textContent = `Volume:    ${data.vol.volValue}E${data.vol.volExponent} km3`;
+        mass.textContent = `Mass:    ${data.mass.massValue}E${data.mass.massExponent} kg`;
+        gravity.innerHTML = `Gravity:    ${data.gravity} m/s&sup2;`;
+        radius.textContent = `Radius:    ${data.meanRadius} km`;
+        escapeSpeed.textContent = `Escape speed:    ${data.escape} m/s`;
+        aphelion.textContent = `Aphelion:    ${data.aphelion} km`
+        siderealRotationPeriod.textContent= `Sidereal rotation period:    ${data.sideralRotation} h`
+        getMoons(planet, moons.textContent);
         outputPlanetName.textContent = `${data.englishName}`;
+        
       } else {
         volume.textContent = `- The Solar System is roughly 4.5 billion years old`;
         mass.textContent = `- A day is longer than a year on Venus`;
