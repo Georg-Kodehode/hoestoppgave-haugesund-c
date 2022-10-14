@@ -5,6 +5,7 @@ export async function getApi(url) {
   return data;
 }
 
+// data for each planet
 export const planetData = [
   {
     name: "Sun",
