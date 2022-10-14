@@ -14,7 +14,7 @@
 body {
   line-height: 1.6;
 }
-}
+
 .home-wrapper a:hover, .planets-nav a:hover {
     text-shadow: 3px 3px 4px #FCA311;
 }
@@ -107,12 +107,12 @@ main {
 }
 .main-wrapper {
   background-color: #14213d;
-  margin: 3.75rem 0 0 0;
+  margin: 8.75rem 0 0 0;
   padding: 3.125rem 4.6875rem;
   box-sizing: border-box;
   /* min-width: 1000px; */
   width: 70rem; /* 1120px */
-  height: 100rem;
+  height: 1fr;
 }
 .main-wrapper h2 {
   margin: 0 0 1rem 0;
@@ -152,6 +152,10 @@ main {
 }
 .planet-text p {
   padding: 1rem 0 0 0;
+}
+
+.planet-name{
+  display: inline;
 }
 
 /* Color palette: https://coolors.co/palette/000000-14213d-fca311-e5e5e5-ffffff */

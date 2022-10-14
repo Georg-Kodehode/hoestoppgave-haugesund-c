@@ -36,9 +36,11 @@ const gravity = document.getElementById('gravity')
 const radius = document.getElementById('radius')
 const escapeSpeed = document.getElementById('escape_speed')
 const headerApiBloc= document.getElementById('header_api_bloc')
+const aphelion = document.getElementById('aphelion')
+const siderealRotationPeriod= document.getElementById('sidereal_rotation_period')
 
 //text block
-const descriptionPlanet = document.getElementById('description_text')
+const descriptionPlanet = document.getElementById('planet-text')
 
 // API request
 const param = { "url": "https://api.le-systeme-solaire.net/rest/bodies"}
@@ -75,11 +77,13 @@ function getPlanetInfo() {
     headerApiBloc.textContent='General information'
 
 // bloc info
-    volum.textContent= `Volum: ${data.vol.volValue}E${data.vol.volExponent}`
-    mass.textContent = `Mass: ${data.mass.massValue}E${data.mass.massExponent}kg`
-    gravity.textContent= `Gravity: ${data.gravity}`
-    radius.textContent= `Radius: ${data.meanRadius}`
-    escapeSpeed.textContent= `Escape speed: ${data.escape}`
+    volum.textContent= `Volum:    ${data.vol.volValue} E${data.vol.volExponent} km3`
+    mass.textContent = `Mass:    ${data.mass.massValue} E${data.mass.massExponent} kg`
+    gravity.textContent= `Gravity:    ${data.gravity} m/s2`
+    radius.textContent= `Mean radius:    ${data.meanRadius} km`
+    escapeSpeed.textContent= `Escape speed:    ${data.escape} m/s`
+    aphelion.textContent = `Aphelion:    ${data.aphelion} km`
+    siderealRotationPeriod.textContent= `Sidereal rotation period:    ${data.sideralRotation} h`
     outputPlanetName.textContent= `${data.englishName}`
 
 // photo
