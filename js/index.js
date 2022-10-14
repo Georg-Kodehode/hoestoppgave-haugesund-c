@@ -50,7 +50,7 @@ async function getPlanetInfo(planet, isPlanet) {
         escapeSpeed.textContent = `Escape speed:    ${data.escape} m/s`;
         aphelion.textContent = `Aphelion:    ${data.aphelion} km`
         siderealRotationPeriod.textContent= `Sidereal rotation period:    ${data.sideralRotation} h`
-        getMoons(planet, moons.textContent);
+        //getMoons(planet, moons.textContent);
         outputPlanetName.textContent = `${data.englishName}`;
         
       } else {
