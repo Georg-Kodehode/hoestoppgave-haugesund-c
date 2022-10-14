@@ -36,15 +36,20 @@
 
     <div class="contact-modal" id="contact-modal">
       <div class="modal-content">
-        <h2>
-          Contact us and leave<br />
-          your feedback
-        </h2>
-        <hr />
-        <h4>alexiurch.kodehode@gmail.com</h4>
-        <h4>georg.kodehode@gmail.com</h4>
-        <h4>magnus.kodehode@gmail.com</h4>
-        <button id="closeBtn">CLOSE</button>
+          <h2>Contact us and leave<br> your feedback</h2>
+          <hr>
+          <form id="contact-form">
+            <label>Name</label>
+            <input type="text" placeholder="Enter your name" id="name" autofocus></input>
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email" id="email"></input>
+            <label>Your feedback</label>
+            <textarea rows="5" cols="18" id="textarea" placeholder="Enter your feedback here"></textarea>
+          </form>
+        <div class="modal-btns-container">
+          <button class="modal-btns" type="submit" id="submitBtn">SUBMIT</button>
+          <button class="modal-btns" id="closeBtn">CLOSE</button>
+        </div>
       </div>
     </div>
 
@@ -73,17 +78,26 @@
             <p id="escape-speed" class="par-api">
               - The whole of Mars is as cold as the South Pole
             </p>
-            <p id="aphelion" class="par_api">- You can't stand on Uranus</p>
-             <p id="sidereal_rotation_period" class="par_api">- The Solar System might not end with Pluto</p>
+            <p id="aphelion" class="par-api">- You can't stand on Uranus</p>
+             <p id="sidereal_rotation_period" class="par-api">- The Solar System might not end with Pluto</p>
             <p id="moons"></p>
           </div>
         </div>
         <div class="planet-text" id="planet-text"></div>
       </div>
     </main>
+    <div class="footerWrapper"></div>
+      <footer>
+        <div class="authors">
+          <p>Autumn project 2022</p>
+          <p>Made by Georg, Oleksii and Magnus</p>
+        </div>
+        <div class="assets">
+          <p>Assets:</p>
+          <p class="copyLink">https://en.wikipedia.org/wiki/Solar_System</p>
+          <p class="copyLink">https://api.le-systeme-solaire.net/en/</p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
-
-<!-- https://en.wikipedia.org/wiki/Solar_System -->
-<!-- Dersom vi skal lage siden på norsk: -->
-<!-- https://no.wikipedia.org/wiki/Solsystemet -->

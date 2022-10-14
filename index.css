@@ -5,7 +5,6 @@
 }
 
 /* Navbar anchors, containers and button */
-
 .planets-nav a,
 .home-wrapper a {
   text-decoration: none;
@@ -14,10 +13,12 @@
 
 body {
   line-height: 1.6;
+  background-image: url(images/mainBackground.jpg);
 }
 
 .home-wrapper a:hover,
-.planets-nav a:hover {
+.planets-nav a:hover,
+.copyLink:hover {
   text-shadow: 3px 3px 4px #fca311;
 }
 
@@ -25,7 +26,7 @@ body {
   display: flex;
   justify-content: center;
   position: fixed;
-  background-color: #0b090a;
+  background-color: rgba(11, 9, 10, 0.93);
   align-items: center;
   height: 5rem;
   width: 100%;
@@ -50,24 +51,38 @@ body {
   color: #0b090a;
   transition: 0.2s all;
 }
+/* End of navbar/navbar elements styling */
 
+/* buttons*/
 #contact-us:active,
-#closeBtn {
+.modal-btns:active {
   transform: scale(0.95);
 }
 
 #contact-us:hover,
-#closeBtn:hover {
+.modal-btns:hover,
+.copyLink:hover {
   box-shadow: 0 0 12px 8px #fca311;
   background-color: #e5e5e5;
   cursor: pointer;
 }
-/* End of navbar/navbar elements styling */
+
+.modal-btns {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  font-weight: 500;
+  color: #0b090a;
+  transition: 0.2s all;
+}
+/* End of button-styling */
 
 /*Contact form modal */
-
 .contact-modal {
   display: none;
+  justify-content: center;
   position: fixed;
   z-index: 1;
   right: 0;
@@ -75,7 +90,7 @@ body {
   top: 0;
   bottom: 0;
   margin: auto;
-  height: 22rem;
+  height: 33rem;
   width: 25rem;
   border-radius: 5px;
   background-color: #0b090a;
@@ -94,16 +109,30 @@ hr {
   box-shadow: 2px 2px 5px #fca311;
 }
 
-#closeBtn {
-  margin-top: 1rem;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #fff;
-  font-weight: 500;
-  color: #0b090a;
-  transition: 0.2s all;
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
+textarea,
+input {
+  color: #0b090a;
+  box-shadow: 0px 0px 6px #fca311;
+}
+
+textarea {
+  resize: none;
+}
+
+.modal-btns-container {
+  margin-top: 1rem;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+/* end of contact form modal */
 
 /* MAIN */
 main {
@@ -130,7 +159,6 @@ main {
   height: 22.5rem;
 }
 .planet-img-wrapper {
-  /* width: 45%; */
   width: 40%;
 }
 .planet-img-wrapper img {
@@ -139,15 +167,12 @@ main {
   object-position: center;
 }
 .planet-api-content {
-  /* width: 55%; */
   width: 60%;
   padding: 0 0 0 1rem;
 }
 
 .planet-api-content p,
 .planet-text p {
-  /* letter-spacing: 0.12rem; */
-  /* letter-spacing: 1px; */
   letter-spacing: 1.5px;
 }
 .planet-text {
@@ -160,8 +185,28 @@ main {
   padding: 1rem 0 0 0;
 }
 
-.planet-name{
+.planet-name {
   display: inline;
 }
+
+/* FOOTER */
+footer {
+  background-color: rgba(229, 229, 229, 0.85);
+  display: flex;
+  width: 70rem;
+  min-width: 1000px;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.footerWrapper {
+  position: relative;
+}
+
+.authors p,
+.assets p {
+  color: #0b090a;
+}
+/* end of footer styling */
 
 /* Color palette: https://coolors.co/palette/000000-14213d-fca311-e5e5e5-ffffff */
