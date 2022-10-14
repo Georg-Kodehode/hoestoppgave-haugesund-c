@@ -46,7 +46,7 @@ async function getPlanetInfo(planet, isPlanet) {
         gravity.innerHTML = `Gravity: ${data.gravity}m/s&sup2;`;
         radius.textContent = `Radius: ${data.meanRadius}`;
         escapeSpeed.textContent = `Escape speed: ${data.escape}`;
-        getMoons(planet, moons.textContent);
+        // getMoons(planet, moons.textContent);
         outputPlanetName.textContent = `${data.englishName}`;
       } else {
         volume.textContent = `- The Solar System is roughly 4.5 billion years old`;
@@ -55,7 +55,7 @@ async function getPlanetInfo(planet, isPlanet) {
         Earth`;
         radius.textContent = `- Saturn's rings are 90% water`;
         escapeSpeed.textContent = `- The whole of Mars is as cold as the South Pole`;
-        moons.textContent = "";
+        // moons.textContent = "";
         outputPlanetName.textContent = "Solar System";
       }
 
