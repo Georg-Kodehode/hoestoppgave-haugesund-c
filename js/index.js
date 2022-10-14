@@ -60,8 +60,7 @@ async function getPlanetInfo(planet, isPlanet) {
         Earth`;
         radius.textContent = `- Saturn's rings are 90% water`;
         escapeSpeed.textContent = `- The whole of Mars is as cold as the South Pole`;
-        
-        moons.textContent = "";
+        // moons.textContent = "";
         outputPlanetName.textContent = "Solar System";
       }
 
