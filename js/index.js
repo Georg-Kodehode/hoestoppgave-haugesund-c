@@ -38,7 +38,6 @@ const planetPhoto = document.getElementById("planet-photo");
 
 // a function that creates an API-request and creates an API-block with information about the planet
 async function getPlanetInfo(planet, isPlanet) {
-  console.log(planet);
   fetch(`${param.url}/${planet}`)
     .then((resp) => resp.json())
     .then((data) => {
